@@ -27,7 +27,7 @@ class MyComponent extends Component {
     this.node.scrollIntoView();
   }
   render() {
-    return <div ref={node => this.node = node} />
+    return <div ref={(node) => { this.node = node; }} />
   }
 }
 ```
